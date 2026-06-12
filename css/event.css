@@ -1,0 +1,41 @@
+/* ----- EVENT SECTION ----- */
+.event-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.event-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 50px 30px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.event-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.event-detail {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}

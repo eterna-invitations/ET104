@@ -1,0 +1,15 @@
+/* ----- MAP SECTION ----- */
+.map-container {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 10px 30px rgba(74, 59, 50, 0.1);
+    border-radius: 2px;
+}

@@ -1,0 +1,75 @@
+/* ----- COUPLE SECTION ----- */
+.couple-section { position: relative; }
+.couple-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.couple-card {
+    padding: 50px 40px;
+    width: 380px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.couple-card:hover {
+    transform: translateY(-10px);
+}
+
+.couple-img-wrapper {
+    width: 200px;
+    height: 250px; /* Portrait vintage frame */
+    margin: 0 auto 30px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+}
+
+.couple-img-wrapper::before, .couple-img-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--primary-color);
+}
+.couple-img-wrapper::before { top: -5px; left: -5px; border-right: none; border-bottom: none; }
+.couple-img-wrapper::after { bottom: -5px; right: -5px; border-left: none; border-top: none; }
+
+
+.couple-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(30%) contrast(1.1); /* Vintage photo effect */
+    transition: var(--transition);
+}
+
+.couple-card:hover .couple-img-wrapper img {
+    filter: none;
+}
+
+.couple-name {
+    font-family: var(--accent-font);
+    font-size: 3rem; /* Calligraphy font */
+    margin-bottom: 5px;
+}
+
+.couple-role {
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 2.5rem;
+    font-family: var(--accent-font);
+    color: var(--primary-color);
+    margin: 0 auto 60px auto;
+    max-width: 700px;
+}

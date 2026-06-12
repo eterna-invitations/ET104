@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Great Vibes for romantic calligraphy, Cinzel for elegant serifs, Montserrat for clear reading -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Modular CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/loading-screen.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/couple.css">
+    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/notices.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/particles.css">
+</head>
+
+<body>
+    <!-- Component Placeholders -->
+    <div id="loading-screen-placeholder"></div>
+    
+    <!-- Floating Gold Dust Container -->
+    <div id="particles-container"></div>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="./assets/music/music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Toggle Button -->
+    <div id="music-toggle" class="music-toggle">
+        <i class="fa-solid fa-volume-high"></i>
+    </div>
+
+    <!-- Main Components -->
+    <div id="hero-placeholder"></div>
+    <div id="couple-placeholder"></div>
+    <div id="story-placeholder"></div>
+    <div id="event-placeholder"></div>
+    <div id="map-placeholder"></div>
+    <div id="gallery-placeholder"></div>
+    <div id="lightbox-placeholder"></div>
+    <div id="notices-placeholder"></div>
+    <div id="footer-placeholder"></div>
+
+    <!-- Data -->
+    <script src="data.js"></script>
+    
+    <!-- Modular Scripts -->
+    <script src="js/populate.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/scroll-reveal.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/music-player.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Component Loader -->
+    <script src="js/loader.js"></script>
+</body>
+
+</html>

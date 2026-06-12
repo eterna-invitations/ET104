@@ -1,0 +1,13 @@
+/* ----- CSS VARIABLES ----- */
+:root {
+    --primary-color: #C5A059; /* Metallic Gold */
+    --secondary-color: #F8F3E9; /* Vintage Parchment Light */
+    --accent-color: #FAF6ED; /* Card Ivory */
+    --text-color: #4A3B32; /* Deep Espresso Brown */
+    --gold-glow: rgba(197, 160, 89, 0.4);
+    
+    --accent-font: 'Great Vibes', cursive;
+    --heading-font: 'Cinzel', serif;
+    --body-font: 'Montserrat', sans-serif;
+    --transition: all 0.5s ease-in-out;
+}

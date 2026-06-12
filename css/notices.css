@@ -1,0 +1,41 @@
+/* ----- NOTICES SECTION ----- */
+.notices-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.notice-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 40px 30px;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    text-align: center;
+    transition: var(--transition);
+    background: transparent;
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+    background: rgba(197, 160, 89, 0.05); /* very soft gold tint */
+}
+
+.notice-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.notice-card h3 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.notice-card p { font-weight: 300; }

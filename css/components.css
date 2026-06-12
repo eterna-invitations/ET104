@@ -1,0 +1,101 @@
+/* ----- COMPONENTS ----- */
+.glass-panel {
+    background: var(--accent-color);
+    border: 1px solid rgba(197, 160, 89, 0.3); /* Gold border */
+    box-shadow: 0 10px 30px rgba(74, 59, 50, 0.08); /* Soft brown shadow */
+    border-radius: 4px; /* Crisp edges like envelope */
+    position: relative;
+}
+
+/* Ornate corner styling */
+.glass-panel::before, .glass-panel::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    opacity: 0.5;
+}
+
+.glass-panel::before {
+    top: 10px;
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.glass-panel::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: none;
+    border-top: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 2px;
+    font-family: var(--body-font);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: 1px solid var(--primary-color);
+    outline: none;
+    background: transparent;
+    color: var(--text-color);
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 5px 15px var(--gold-glow);
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #a88546;
+    transform: translateY(-2px);
+}
+
+.hidden { display: none !important; }
+
+/* Music Toggle */
+.music-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 4px 15px rgba(74, 59, 50, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: var(--transition);
+    border: 1px solid rgba(197, 160, 89, 0.4);
+}
+
+.music-toggle i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.music-toggle:hover {
+    transform: scale(1.1);
+    background: var(--primary-color);
+}
+
+.music-toggle:hover i {
+    color: #fff;
+}
